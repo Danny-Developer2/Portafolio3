@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { MotionTransition } from "./transition-component";
-import Service from '../Public/services.png'
+import Service from '../public/services.png'
 
 const AvatarServices = () => {
     return (

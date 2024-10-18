@@ -1,5 +1,5 @@
 "use client"
-import Profile from "../Public/avatar-1.png"
+import Profile from "../public/avatar-1.png"
 import { TypeAnimation } from "react-type-animation"
 import Image from "next/image"
 

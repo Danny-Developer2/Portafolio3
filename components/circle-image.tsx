@@ -1,7 +1,7 @@
 "use client"
 
 import Image from 'next/image'
-import ServicesImage from "../Public/services.png"
+import ServicesImage from "../public/services.png"
 
 const CircleImage = () => {
     return (

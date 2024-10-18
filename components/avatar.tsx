@@ -1,7 +1,7 @@
 
 "use client"
 
-import avatar from "../Public/home-4.png";
+import avatar from "../public/home-4.png";
 import Image from "next/image";
 
 import { MotionTransition } from "./transition-component";

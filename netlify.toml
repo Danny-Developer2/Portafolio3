@@ -1,0 +1,8 @@
+[build]
+  publish = "build"  # Carpeta que contiene el sitio compilado
+  command = "npm run build"  # Comando de compilación
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status 200

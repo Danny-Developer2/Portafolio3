@@ -105,9 +105,9 @@ const ProjectComponent: React.FC = () => {
   // }, []);
 
   return (
-<div className="hidden sm:flex flex h-screen bg-[#1f1934] text-white">
+<div className="flex h-screen bg-[#1f1934] text-white">
   {/* Left side - Image with Text */}
-  <div className="w-1/2 flex items-center justify-center relative overflow-hidden">
+  <div className="hidden sm:flex w-1/2 flex items-center justify-center relative overflow-hidden">
     <Image
       src="https://www.ldhmsoftware.com/wp-content/uploads/2023/11/0_cl7fc6pt1MHjIF4K-1024x622.png"
       width={700}

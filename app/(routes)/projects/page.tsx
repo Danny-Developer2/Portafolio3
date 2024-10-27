@@ -124,7 +124,7 @@ const ProjectComponent: React.FC = () => {
   </div>
   {/* Right Side - Projects */}
   <div className="w-1/2 p-8 flex flex-col justify-center">
-    <h2 className="text-3xl font-bold mb-6 text-center">################################</h2>
+    <h2 className="text-3xl font-bold mb-6 text-center"></h2>
 
     {/* Mostrar mensaje de error si existe */}
     {error ? (

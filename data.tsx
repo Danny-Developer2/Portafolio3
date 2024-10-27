@@ -50,6 +50,12 @@ export const itemsNavbar = [
         icon: <Mail size={25} color="#fff" strokeWidth={1} />,
         link: "/Mail",
     },
+    {
+        id: 5,
+        title: "Haking",
+        icon: <Computer size={25} color="#fff" strokeWidth={1} />,
+        link: "/Computer",
+    },
  
 ];
 
@@ -70,9 +76,9 @@ export const dataAboutPage = [
     },
     {
         id: 3,
-        title: "Especialista en Desarrollo Frontend",
+        title: "Especialista en Desarrollo Backend",
         subtitle: "BoockStore",
-        description: "Como desarrollador frontend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
+        description: "Como desarrollador Backend, tendrás la oportunidad de colaborar en proyectos diversos y desafiantes que te permitirán expandir tus habilidades y dejar tu huella en el mundo digital.",
         date: "Ago 2020",
     },
     {
@@ -82,33 +88,40 @@ export const dataAboutPage = [
         description: "Únete a nosotros mientras creamos sitios web y aplicaciones interactivas que sorprenden y deleitan a nuestros clientes. Si tienes pasión por el diseño y la programación, y disfrutas colaborar en un entorno creativo, ¡queremos conocerte!        ",
         date: "Mar 2019",
     },
+    {
+        id: 5,
+        title: "Ciberseguridad",
+        subtitle: "Hackthebox",
+        description: "Licenciatura en Ciberseguirdad en FCFM UANL como especialista en ciberseguridad protege sistemas y redes de amenazas cibernéticas. Se encarga de implementar medidas de seguridad, monitorear redes, realizar pruebas de penetración y responder a incidentes para asegurar la integridad y confidencialidad de los datos. ",
+        date: "Mar 2018",
+    },
 ]
 
 export const dataCounter = [
     {
         id: 0,
-        endCounter: 10,
+        endCounter: 5,
         text: "Años de experiencia",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 1,
-        endCounter: 80,
+        endCounter: 30,
         text: "Clientes satisfechos",
         lineRight: true,
         lineRightMobile: false,
     },
     {
         id: 2,
-        endCounter: 220,
+        endCounter: 50,
         text: "Proyectos finalizados",
         lineRight: true,
         lineRightMobile: true,
     },
     {
         id: 3,
-        endCounter: 30,
+        endCounter: 20,
         text: "Premios ganadores",
         lineRight: false,
         lineRightMobile: false,

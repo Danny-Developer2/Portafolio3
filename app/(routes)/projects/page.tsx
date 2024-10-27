@@ -123,7 +123,50 @@ const ProjectComponent: React.FC = () => {
     </div>
   </div>
   {/* Right Side - Projects */}
-  <div className="w-1/2 p-8 flex flex-col justify-center">
+  <div className="flex sm:hidden w-100 p-8 flex flex-col justify-center">
+    <h2 className="text-3xl font-bold mb-6 text-center">Proyectos</h2>
+
+    {/* Mostrar mensaje de error si existe */}
+    {error ? (
+      <p className="text-red-500 text-center">{error}</p>
+    ) : (
+      projects.length === 0 && <p>No hay proyectos disponibles.</p>
+    )}
+
+    {/* Scrollable container for projects */}
+    <div className="space-y-5 max-h-[500px] overflow-y-auto">
+      {projects.map((project, index) => (
+        <div
+          key={index}
+          className="p-14 bg-gray-800 rounded-lg shadow hover:shadow-lg transition-shadow"
+        >
+          <div className="flex flex-col justify-center items-center text-center h-full">
+            <Image
+              src={project.img}
+              alt={project.name}
+              width={400}
+              height={400}
+              style={{ width: "200px", height: "150px" }}
+              className="w-3/4 h-auto rounded-lg shadow-lg"
+            />
+            <h3 className="text-xl font-semibold mt-4">{project.name}</h3>
+            <h1>Descripción</h1>
+            <p className="text-gray-300 mt-2">{project.info}</p>
+            <a
+              href={project.url}
+              className="text-blue-400 hover:underline mt-2"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Project
+            </a>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+  </div>
+  <div className="hidden sm:flex w-1/2 p-8 flex flex-col justify-center">
     <h2 className="text-3xl font-bold mb-6 text-center"></h2>
 
     {/* Mostrar mensaje de error si existe */}
@@ -164,6 +207,7 @@ const ProjectComponent: React.FC = () => {
         </div>
       ))}
     </div>
+    
   </div>
 </div>
 
